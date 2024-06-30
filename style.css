@@ -1,37 +1,42 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  border: none;
-  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+        sans-serif;
 }
-body{
-   
+
+body {
+    color: white;
+    background-color: #232323;
+    font-family: sans-serif;
 }
+.container{
+    height: 100%;
+
+width: 100%;
+
+}
+
 .container-1 {
-  height: 710px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-
+    height: 710px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-1 .image {
-  background-image: url(img/background-image.jpg);
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-color:rgba(26, 10, 8);
-  filter: brightness(.3);
-  
-
-  
-
-
+    background-image: url(img/background-image.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: rgba(26, 10, 8);
+    filter: brightness(0.2);
 }
-.navbar-items{
+
+.navbar-items {
     display: flex;
     gap: 900px;
     justify-content: space-between;
@@ -39,108 +44,346 @@ body{
 
     height: 60px;
     box-sizing: content-box;
-  padding-top: 10px;
-    
-
-}
-.container-1 .navbar{
-height: 50px;
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-position: absolute;
-top: 5px;
-
+    padding-top: 10px;
 }
 
-.container-1 .navbar .nav-logo{
+.container-1 .navbar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+}
+
+.container-1 .navbar .nav-logo {
     height: 170px;
     width: 170px;
-display: flex;
-align-items: center;
-justify-content: center;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.container-1 .navbar .nav-logo .logo{
+
+.container-1 .navbar .nav-logo .logo {
     height: 100%;
     width: 100%;
     background-image: url(img/netflix-logo.jpg);
     background-size: cover;
     filter: brightness(2);
     background-color: transparent;
-   
- 
 }
-.nav-button{
+
+.nav-button {
     height: 35px;
     width: 80px;
     background-color: #c11119;
     filter: brightness(2);
-    
 }
-.nav-button .button{
+
+.nav-button .button {
     height: 100%;
     width: 100%;
     background-color: #c11119;
     font-size: 15px;
     border-radius: 5px;
     color: white;
- 
-
 }
-.mid-section{
+
+.mid-section {
     width: 1200px;
- position: absolute;
-font-weight: 450;
- top: 250px;
- color: white;
- text-align: center;
- 
- 
-
- 
+    position: absolute;
+    font-weight: 450;
+    top: 250px;
+    color: white;
+    text-align: center;
 }
-.email-input{
 
+.email-input {
     text-align: center;
     height: 80px;
     width: 600px;
- 
-position: absolute;
-left: 300px;
+
+    position: absolute;
+    left: 300px;
     display: flex;
 
-   justify-content: center;
+    justify-content: center;
     column-gap: 10px;
- 
-    
-
-   
-    
 }
 
-#email{
-    
+#email {
     height: 55px;
     width: 380px;
     padding-left: 30px;
     border: 1px solid gray;
     background-color: #0f1010;
-  
+
+    font-size: 18px;
     border-radius: 5px;
 }
 
-#button{
-  
+#button {
     height: 55px;
     width: 220px;
-background-color: #c11119;
+    background-color: #c11119;
+
+    filter: saturate(10);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* this is the 2nd container  */
+
+.container-2 {
+    height: 550px;
+    width: 100%;
+    background-color: #000000;
+    margin-top: 10px;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.container-2 .left-side-text {
+    height: 100px;
+    width: 500px;
+    color: white;
+    font-size: 28px;
+    position: relative;
+    left: 200px;
+    top: 200px;
+    padding-top: 10px;
+}
+
+.container-2 .right-side-video {
+    height: 300px;
+    width: 490px;
+    color: white;
+
+    position: absolute;
+    top: 110vh;
+
+    box-sizing: content-box;
+
+    right: 100px;
+}
+
+.container-2 .right-side-video img {}
+
+.container-2 .right-side-video video {
+    position: absolute;
+    right: 65px;
+    top: 65px;
+    height: 210px;
+    border-radius: 10px;
+}
+
+.container-3 {
+    height: 550px;
+    width: 100%;
+    background-color: #000000;
+    margin-top: 10px;
+    display: flex;
+flex-direction: row-reverse;
+position:absolute;
+   
+}
+
+.container-3 .left-side-text {
+    height: 100px;
+    width: 500px;
+    color: white;
+    font-size: 28px;
+    position: relative;
+   right: 220px;
+    top: 140px;
+    padding-top: 10px;
+
+}
+
+.container-3 .right-side-video {
+    height: 300px;
+    width: 490px;
+    color: white;
+    position: absolute;
+left: 250px;
+   
+   top: 100px;
 
 
-filter: saturate(10);
-color: white;
-font-size: 20px;
-font-weight: bold;
-border-radius: 5px;
+    box-sizing: content-box;
+
+  
+}
+
+.container-3 .right-side-video img {}
+
+.container-3 .download{
+    height: 100px;
+    width: 300px;
+    border: 2px solid gray;
+    margin-left:95px ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+.container-3 .download .image{
+    background-image: url(img/boxshot.png);
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    color: white;
+    
+   
+
+}
+
+
+.container-3 .download .image .text{
+    height: 80px;
+    width: 120px;
+    margin-left: 90px;
+    margin-top: 20px;
+    
+    
+
+}
+.container-3 .download .image .text p{
+    font-weight: bold;
+
+}
+.container-3 .download .image .text span{
+    color: rgba(5, 103, 250, 0.821);
+}
+.container-3 .download .image .text img{
+    height: 50px;
+    width: 50px;
+    box-sizing: content-box;
+    object-fit: cover;
+    position: relative;
+top: -40px;
+left: 150px;
+
+}
+
+.container-4{
+    height: 400px;
+    width: 100%;
+    background-color: #000000;
+    
+    position: relative;
+    top: 76vh;
+}
+
+.container-4 .left-side-text {
+    height: 100px;
+    width: 100px;
+    color: white;
+    font-size: 28px;
+    position: relative;
+   left: 25%;
+    top: 40px;
+    padding-top: 10px;
+
+}
+
+
+
+.container-5 {
+    height: 550px;
+    width: 100%;
+    background-color: #000000;
+    margin-top: 10px;
+    display: flex;
+flex-direction: row-reverse;
+position:relative;
+top: 76vh;
+   
+}
+
+.container-5 .left-side-text {
+    height: 100px;
+    width: 500px;
+    color: white;
+    font-size: 28px;
+    position: relative;
+   right: 220px;
+    top: 140px;
+    padding-top: 10px;
+
+}
+
+.container-5 .right-side-video {
+    height: 300px;
+    width: 490px;
+    color: white;
+    position: absolute;
+left: 250px;
+   
+   top: 100px;
+
+
+    box-sizing: content-box;
+
+  
+}
+.footer-panel{
+    height: 400px ;
+    width: 100%;
+    background-color: #000000;
+    position:relative; 
+    top: 76vh;
+    margin-top: 10px;
+}
+.footer-panel  {
+    
+  
+    
+}
+.footer-panel table {
+    padding-left: 10px;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    padding: 10px;
+    
+}
+.footer-panel table tr td {
+    padding: 10px 150px 10px 10px;
+    margin-left: 50px;
+   position: relative;
+   top: 50px;
+   text-align: left;
+}
+.footer-panel table tr td a{
+    text-decoration: none;
+    color: gray;
+    
+}
+.footer-panel .button{
+    height: 30px ;
+    width: 100px;
+    border: 2px solid white;
+    position: relative;
+    left: 220px;
+    top: 60px;
+    text-align: center;
+}
+#select{
+    position: inherit;
+    left: 30px;
+    bottom: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+ #p{
+    position: relative;
+    left: 220px;
+    top: 80px;
+    color: gray;
 }
