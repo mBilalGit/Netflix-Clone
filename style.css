@@ -14,7 +14,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
- 
+
 
 }
 
@@ -67,6 +67,8 @@ justify-content: center;
     width: 100%;
     background-image: url(img/netflix-logo.jpg);
     background-size: cover;
+    filter: brightness(2);
+    background-color: transparent;
    
  
 }
@@ -74,6 +76,7 @@ justify-content: center;
     height: 35px;
     width: 80px;
     background-color: #c11119;
+    filter: brightness(2);
     
 }
 .nav-button .button{
@@ -89,7 +92,7 @@ justify-content: center;
 .mid-section{
     width: 1200px;
  position: absolute;
-
+font-weight: 450;
  top: 250px;
  color: white;
  text-align: center;
@@ -105,7 +108,7 @@ justify-content: center;
     width: 600px;
  
 position: absolute;
-left: 270px;
+left: 300px;
     display: flex;
 
    justify-content: center;
@@ -119,20 +122,25 @@ left: 270px;
 
 #email{
     
-    height: 60px;
-    width: 330px;
+    height: 55px;
+    width: 380px;
     padding-left: 30px;
     border: 1px solid gray;
     background-color: #0f1010;
   
-   
+    border-radius: 5px;
 }
 
 #button{
   
-    height: 60px;
-    width: 180px;
+    height: 55px;
+    width: 220px;
 background-color: #c11119;
+
+
+filter: saturate(10);
 color: white;
 font-size: 20px;
+font-weight: bold;
+border-radius: 5px;
 }
